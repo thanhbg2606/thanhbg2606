@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
+ <head>
+     <title>BT1</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ </head>   
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="Dd4t1Oa9"></script>
 
-<!-- HEADER -->
+    <!-- HEADER -->
     <header class="text-center">
       <div style="background-color: #ccc; height: 64px;">
             <h2 style="line-height: 64px;">BÀI THỰC HÀNH 1</h2>
       </div>
     </header>
-  
-
-
 
   <!--START CONTENT -->
 
   <!-- start form -->
-  <div id="register" class="container">
-    <h2>Đăng ký thông tin</h2>
+  <div id="register" class="container mt-4">
+    <h2 class="mb-3">Đăng ký thông tin</h2>
     <form>
         <div class="">
             <div class="form-group row">
@@ -86,44 +85,53 @@
   </div>
   <!-- end form -->
 
-  <!-- MAP -->
-  <div id="map" class="container mt-4">
-      <h2>Bản đồ</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7432.413524051629!2d106.2561961!3d21.3423382!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1631866321257!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </div>
 
-  <div class="messages">
-      <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
+  <!-- social network -->
+  <div class="container mt-4 row text-center">
+    <!-- MAP -->
+    <div id="map" class="col">
+          <h2>Bản đồ</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7432.413524051629!2d106.2561961!3d21.3423382!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1631866321257!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
     </div>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "1673549996210892");
-      chatbox.setAttribute("attribution", "biz_inbox");
-
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+    <div class="fanpage col">
+        <h2>Fanpage</h2>
+        <div class="fb-page" data-href="https://www.facebook.com/&#x1a0;n-gi&#x1a1;&#x300;i-1673549996210892/" data-tabs="timeline" data-width="300" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/&#x1a0;n-gi&#x1a1;&#x300;i-1673549996210892/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/&#x1a0;n-gi&#x1a1;&#x300;i-1673549996210892/">Ơn giời</a></blockquote>
+        </div>
+    </div>
+    
+    
+    <div class="messages">
+          <!-- Messenger Plugin chat Code -->
+        <div id="fb-root"></div>
+    
+        <!-- Your Plugin chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+    
+        <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "1673549996210892");
+          chatbox.setAttribute("attribution", "biz_inbox");
+    
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v12.0'
+            });
+          };
+    
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+      </div>
   </div>
-
-
 
 
 
@@ -132,28 +140,9 @@
   
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
+    <div class="" style="margin-top:75px;background-color: #ccc; height: 64px; line-height: 64px;">
+        <p class="text-center">Powered by <a href="https://www.facebook.com/thanh10a3" target="_blank" style="cursor: pointer;">NgocThanh</a>
+        </p>
+    </div>
 </body>
 </html>
